@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年个人年终工作总结 - 技术部 朱永</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 自定义滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #2563eb 100%);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased">
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+        
+        <aside class="w-full md:w-64 bg-slate-900 text-white flex-shrink-0 md:fixed md:h-screen overflow-y-auto z-50">
+            <div class="p-6">
+                <h1 class="text-2xl font-bold tracking-wider">年终总结 2025</h1>
+                <p class="text-slate-400 text-sm mt-2">技术部 / 朱永</p>
+            </div>
+            <nav class="mt-4">
+                <a href="#header" class="block py-3 px-6 hover:bg-slate-800 transition border-l-4 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-home w-6"></i> 概览
+                </a>
+                <a href="#highlight" class="block py-3 px-6 hover:bg-slate-800 transition border-l-4 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-star w-6"></i> 一、高光时刻
+                </a>
+                <a href="#review" class="block py-3 px-6 hover:bg-slate-800 transition border-l-4 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-sync-alt w-6"></i> 二、深度复盘
+                </a>
+                <a href="#iteration" class="block py-3 px-6 hover:bg-slate-800 transition border-l-4 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-chart-radar w-6"></i> 三、自我迭代
+                </a>
+                <a href="#planning" class="block py-3 px-6 hover:bg-slate-800 transition border-l-4 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-map w-6"></i> 四、工作规划
+                </a>
+                <a href="#expectations" class="block py-3 px-6 hover:bg-slate-800 transition border-l-4 border-transparent hover:border-indigo-500">
+                    <i class="fas fa-comment-dots w-6"></i> 五、期待与诉求
+                </a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 md:ml-64 p-4 md:p-8 lg:p-12">
+            
+            <section id="header" class="mb-12 glass-card p-8 rounded-2xl shadow-lg relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
+                
+                <div class="relative z-10">
+                    <div class="flex justify-between items-start flex-wrap gap-4">
+                        <div>
+                            <h2 class="text-4xl font-extrabold text-slate-800 mb-2">2025年个人年终工作总结</h2>
+                            <div class="flex items-center space-x-4 text-slate-500 mt-2">
+                                <span><i class="fas fa-user"></i> 汇报人：朱永</span>
+                                <span><i class="fas fa-building"></i> 汇报部门：技术部</span>
+                                <span><i class="fas fa-calendar"></i> 汇报时间：2025年12月</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold">重塑</span>
+                            <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">洞察</span>
+                            <span class="px-4 py-2 bg-cyan-100 text-cyan-700 rounded-full text-sm font-semibold">进阶</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-slate-50 border-l-4 border-indigo-500 rounded-r-lg">
+                        <p class="text-lg italic text-slate-700">
+                            <strong>自评Slogan：</strong> 保持空杯心态，在调研中学习，以实战换真知；在AI浪潮中快速迭代认知，构建产品核心竞争力。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="highlight" class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white mr-3 shadow-md">1</div>
+                    <h3 class="text-2xl font-bold text-slate-800">一、高光时刻</h3>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
+                    <h4 class="text-xl font-bold text-indigo-700 mb-4 border-b pb-2">1.1 价值交付</h4>
+                    <p class="text-slate-600 mb-4">个人认为2025年最有价值的三项工作：</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200 border rounded-lg">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/6">工作项</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/4">难点/挑战</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/4">关键动作</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">价值/数据</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200 text-sm">
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold text-slate-800 align-top">AI智能体生态建设</td>
+                                    <td class="px-6 py-4 text-slate-600 align-top">
+                                        <ul class="list-disc pl-4 space-y-2">
+                                            <li><span class="font-medium text-slate-800">商业模式探索：</span>公司结合AI的商业模式尚不明确，需要在“教育-技术-产品-业务”之间寻找平衡点。</li>
+                                            <li><span class="font-medium text-slate-800">技术快速迭代：</span>AI技术发展日新月异，大模型能力难以预估，对产品能力的进化速度要求极高。</li>
+                                        </ul>
+                                    </td>
+                                    <td class="px-6 py-4 text-slate-600 align-top">
+                                        <ul class="list-disc pl-4 space-y-2">
+                                            <li><span class="font-medium text-slate-800">基础能力搭建：</span>设计并上线了智能体的学员管理、日志、标注、数据统计等核心模块，搭建起智能体运行基座。</li>
+                                            <li><span class="font-medium text-slate-800">能力扩展：</span>完成插件扩展功能的设计与上线，支持联网搜索等高级能力。</li>
+                                            <li><span class="font-medium text-slate-800">流程与竞品：</span>梳理优化智能体内部技能整体工作流程；输出《教育+AI竞品分析报告》及智能体商业模式分析报告，为决策提供支撑。</li>
+                                        </ul>
+                                    </td>
+                                    <td class="px-6 py-4 text-slate-600 align-top">
+                                        <ul class="list-disc pl-4 space-y-2">
+                                            <li><span class="font-medium text-slate-800">平台从0到1：</span>成功构建了公司自有的AI智能体平台，具备了插件化和可运营能力。</li>
+                                            <li><span class="font-medium text-slate-800">场景支撑：</span>为后续的AI评阅、AI培训报告等具体业务场景提供了底层技术平台支持。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold text-slate-800 align-top">AI案例仿真</td>
+                                    <td class="px-6 py-4 text-slate-600 align-top">
+                                        <ul class="list-disc pl-4 space-y-2">
+                                            <li><span class="font-medium text-slate-800">理论与落地结合：</span>属于全新的业务形态，需要先学习案例仿真理论，再将其转化为具体的产品方案，认知门槛高。</li>
+                                            <li><span class="font-medium text-slate-800">复杂交互设计：</span>需要利用智能体平台搭建示例，并设计复杂的交互原型以满足基础教育等具体业务需求。</li>
+                                        </ul>
+                                    </td>
+                                    <td class="px-6 py-4 text-slate-600 align-top">
+                                        <ul class="list-disc pl-4 space-y-2">
+                                            <li><span class="font-medium text-slate-800">理论研究与验证：</span>学习案例仿真理论，使用智能体平台搭建了AI案例仿真的示例智能体。</li>
+                                            <li><span class="font-medium text-slate-800">全流程闭环：</span>11月完成了从基础教育需求调研、产品方案设计、原型设计到PRD编写的全流程工作。</li>
+                                            <li><span class="font-medium text-slate-800">交付研发：</span>完成需求评审并成功交付研发，正式进入开发环节。</li>
+                                        </ul>
+                                    </td>
+                                    <td class="px-6 py-4 text-slate-600 align-top">
+                                        <ul class="list-disc pl-4 space-y-2">
+                                            <li><span class="font-medium text-slate-800">产品形态创新：</span>拓展了公司在“AI+教学”领域的新产品形态，实现了从理论概念到研发落地的突破。</li>
+                                            <li><span class="font-medium text-slate-800">按时交付：</span>在Q4顺利完成方案定稿并进入研发，为明年Q1的产品发布奠定基础。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-semibold text-slate-800 align-top">推荐系统</td>
+                                    <td class="px-6 py-4 text-slate-600 align-top">
+                                        <ul class="list-disc pl-4 space-y-2">
+                                            <li><span class="font-medium text-slate-800">从0到1的逻辑构建：</span>公司内部缺乏成熟的推荐系统搭建经验，推荐算法与策略逻辑复杂。</li>
+                                            <li><span class="font-medium text-slate-800">通用与业务的适配：</span>需要将行业通用的推荐逻辑（通过调研头部云产品获取）进行抽象和转化，使其适配基教、高教等具体的教育业务场景，设计难度较大。</li>
+                                        </ul>
+                                    </td>
+                                    <td class="px-6 py-4 text-slate-600 align-top">
+                                        <ul class="list-disc pl-4 space-y-2">
+                                            <li><span class="font-medium text-slate-800">标杆调研与学习：</span>深入调研阿里云、火山引擎等成熟云产品的推荐系统架构，通过解构头部竞品，学习推荐系统的核心逻辑与实现路径。</li>
+                                            <li><span class="font-medium text-slate-800">自研方案设计：</span>基于调研成果进行本地化设计，结合业务线（基教/高教）需求，输出了适合公司业务特性的推荐系统产品方案。</li>
+                                            <li><span class="font-medium text-slate-800">多方评审确认：</span>主导完成了产品方案在内部及产研测团队的深度沟通与确认，确保方案的技术可行性与业务匹配度。</li>
+                                        </ul>
+                                    </td>
+                                    <td class="px-6 py-4 text-slate-600 align-top">
+                                        <ul class="list-disc pl-4 space-y-2">
+                                            <li><span class="font-medium text-slate-800">能力引进与内化：</span>通过自主调研学习，成功将行业先进的推荐系统设计方法论引入团队，填补了平台在算法推荐领域的设计空白。</li>
+                                            <li><span class="font-medium text-slate-800">方案落地：</span>完成了从“技术黑盒”到“清晰方案”的转化，输出了经过多方论证的可执行方案，为明年系统的研发与上线打下坚实基础。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h4 class="text-xl font-bold text-indigo-700 mb-4 border-b pb-2">1.2 壁垒构建</h4>
+                    <p class="text-slate-600 mb-4">以下是我在系统稳定性、可扩展性、安全性以及底层能力复用而做的工作：</p>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                            <h5 class="font-bold text-slate-800 mb-2"><i class="fas fa-layer-group text-indigo-500 mr-2"></i>1、平台分类/分组统一治理</h5>
+                            <p class="text-sm text-slate-600">针对平台资源分组与业务分类管理割裂的现状，完成了统一管理模式的整合。这不仅减少了代码冗余，更确保了数据结构的一致性，为后续的数据分析和资源调用扫清了障碍。</p>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                            <h5 class="font-bold text-slate-800 mb-2"><i class="fas fa-network-wired text-indigo-500 mr-2"></i>2、智能体（Agent）中台化</h5>
+                            <p class="text-sm text-slate-600">搭建了包含日志、标注、插件扩展（联网搜索）在内的智能体平台基座。这不再是单一的AI功能，而是一个可以不断生产新AI应用的“工厂”，具备了极强的复用性和扩展性。</p>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                            <h5 class="font-bold text-slate-800 mb-2"><i class="fas fa-shield-alt text-indigo-500 mr-2"></i>3、身份验证安全升级</h5>
+                            <p class="text-sm text-slate-600">持续优化实名认证与人脸识别系统，保障用户身份验证安全。这为网院迁移后的考试、证书发放等严肃场景提供了风控保障。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="review" class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white mr-3 shadow-md">2</div>
+                    <h3 class="text-2xl font-bold text-slate-800">二、深度复盘</h3>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
+                    <h4 class="text-xl font-bold text-indigo-700 mb-4">2.1 价值交付</h4>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-red-50 border-l-4 border-red-400 p-4">
+                            <h5 class="font-bold text-red-800 mb-2">（1）问题现象</h5>
+                            <p class="text-sm text-red-700 mb-2">在2025年下半年，随着工作重心从传统的网院功能迁移转向AI案例仿真和推荐系统等深水区业务，我明显感到对AI底层技术理解的透彻度不足以支撑复杂的业务设计。具体表现为：</p>
+                            <ul class="list-disc pl-5 text-sm text-red-700">
+                                <li><strong>边界不清：</strong> 在设计AI智能体的复杂交互时，难以精准判断大模型的能力边界与幻觉风险，导致在“技术可行性”与“用户体验”之间反复摇摆。</li>
+                                <li><strong>沟通成本：</strong> 在与研发团队讨论AI评阅的定时任务与人机交互逻辑时，因对技术实现路径的理解不够深入，导致前期的沟通成本较高。</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-orange-50 border-l-4 border-orange-400 p-4">
+                            <h5 class="font-bold text-orange-800 mb-2">（2）问题归因</h5>
+                            <ul class="list-disc pl-5 text-sm text-orange-700">
+                                <li class="mb-1"><strong>思维方式滞后：</strong> 过去多年的教育产品经验建立在“确定性逻辑”之上，而AI产品设计本质上是基于“概率论”的。这种确定性思维向概率性思维的转型，是我面临的最大认知挑战。</li>
+                                <li class="mb-1"><strong>知识更新速率脱节：</strong> 2025年AI技术栈迭代极快，单纯依赖工作中的碎片化输入（如竞品调研）已无法构建体系化的技术认知。</li>
+                                <li><strong>缺乏经验：</strong> 作为产品经理，长时间停留在文档（PRD）层面，缺乏亲手搭建AI工具、配置参数的实战经验，导致对AI技术的理解停留在理论层。</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-green-50 border-l-4 border-green-400 p-4">
+                            <h5 class="font-bold text-green-800 mb-2">解决对策</h5>
+                            <p class="text-sm text-green-700 mb-2">为了解决上述问题，我制定并执行了专项提升计划：</p>
+                            <ul class="list-decimal pl-5 text-sm text-green-700 space-y-1">
+                                <li><strong>体系化理论输入：</strong>利用业余时间系统学习了Coursera上的AI产品经理与机器学习通识课程、IBM AI产品经理系列课，从底层补齐了关于AI核心概念的认知短板。</li>
+                                <li>建立了每日阅读AI技术博客与行业深度文章的习惯，确保对前沿技术趋势，保持敏锐度。</li>
+                                <li><strong>碎片化视野拓展：</strong>通过通勤时间高频收听AI科技类播客，吸收行业大咖对AI落地场景的商业思考，解决“不知道AI能做什么”的视野问题。</li>
+                                <li><strong>低成本实战验证：</strong>自己动手搭建个人小项目实战，如基于API的简易应用，通过亲手写Prompt、调试参数，获得了AI的“手感”。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h4 class="text-xl font-bold text-indigo-700 mb-4">2.2 方法论沉淀</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="p-4 border rounded hover:shadow-md transition">
+                            <h5 class="font-bold text-slate-800 mb-2">（1）行业/竞品分析</h5>
+                            <p class="text-sm text-slate-600">上半年输出了《教育+AI竞品分析报告》与《教师研修网AI智能体竞品分析报告》，为团队提供了教育行业AI应用的宏观视角。</p>
+                        </div>
+                        <div class="p-4 border rounded hover:shadow-md transition">
+                            <h5 class="font-bold text-slate-800 mb-2">（2）商业模式探索</h5>
+                            <p class="text-sm text-slate-600">针对团队在商业化上的困惑，9月输出了《智能体商业模式分析报告》，将个人的思考转化为文档，供团队讨论与决策；并且完成了对超星智能体平台的深度调研，并输出竞品调研分析报告，为公司智能体平台建设提供参考。</p>
+                        </div>
+                        <div class="p-4 border rounded hover:shadow-md transition">
+                            <h5 class="font-bold text-slate-800 mb-2">（3）推荐系统</h5>
+                            <p class="text-sm text-slate-600">11月完成了对阿里云和火山引擎推荐系统云产品的调研，将复杂的算法逻辑拆解为产品方案，填补了团队在推荐策略设计上的空白。</p>
+                        </div>
+                        <div class="p-4 border rounded hover:shadow-md transition">
+                            <h5 class="font-bold text-slate-800 mb-2">定义标准化</h5>
+                            <p class="text-sm text-slate-600">8月梳理并输出了《智能体技能模板需求文档模板》，针对智能体技能这一新事物，制定了标准的需求描述格式，规范了产研沟通语言，减少了理解偏差。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="iteration" class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white mr-3 shadow-md">3</div>
+                    <h3 class="text-2xl font-bold text-slate-800">三、自我迭代</h3>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8 mb-8">
+                    <div class="bg-white rounded-xl shadow-sm p-6 col-span-1 flex flex-col items-center justify-center">
+                        <h4 class="text-lg font-bold text-slate-700 mb-4">能力维度雷达图</h4>
+                        <div style="position: relative; height:300px; width:100%">
+                            <canvas id="skillsChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 col-span-2 overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">维度</th>
+                                    <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">评分</th>
+                                    <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">优势分析</th>
+                                    <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">短板与改进计划</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200 text-sm">
+                                <tr>
+                                    <td class="px-4 py-3 font-medium text-slate-800">业务理解</td>
+                                    <td class="px-4 py-3 font-bold text-indigo-600">4.2</td>
+                                    <td class="px-4 py-3 text-slate-600">具备复杂业务的穿透力，深入理解不同用户角色的特定业务流，能够快速将用户痛点转化为产品方案</td>
+                                    <td class="px-4 py-3 text-slate-600">
+                                        <p class="mb-1">在6.0的模块建设期，业务输入一直不够，之后随着客户实际需求越来越多，这一情况应该能够避免；</p>
+                                        <p class="mb-1">对“AI+教育”的商业模式尚未形成清晰的闭环逻辑，随着智能体产品推出市场会好转；</p>
+                                        <p>缺乏市场反馈：改进方式与第一个问题一致。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium text-slate-800">架构设计</td>
+                                    <td class="px-4 py-3 font-bold text-indigo-600">4.3</td>
+                                    <td class="px-4 py-3 text-slate-600">具备优秀的平台治理与抽象思维</td>
+                                    <td class="px-4 py-3 text-slate-600">
+                                        <p class="mb-1">在涉及复杂算法策略的架构上，目前主要依赖调研外部产品来“照猫画虎”，自主设计复杂算法架构的经验尚浅；</p>
+                                        <p>计划在推荐系统研发过程中，深入参与技术架构评审，理解数据流转与算法调用的底层逻辑。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium text-slate-800">技术理解</td>
+                                    <td class="px-4 py-3 font-bold text-indigo-600">4.0</td>
+                                    <td class="px-4 py-3 text-slate-600">能够通过深度竞品调研和技术研究，快速掌握核心逻辑并输出可落地的产品方案</td>
+                                    <td class="px-4 py-3 text-slate-600">
+                                        <p class="mb-1">面对AI大模型的“幻觉”和非确定性，有时难以精准预估技术边界；</p>
+                                        <p>计划利用系统性的课程和个人小项目实战，增强对模型参数、Prompt工程及RAG技术的体感。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium text-slate-800">产品设计</td>
+                                    <td class="px-4 py-3 font-bold text-indigo-600">4.5</td>
+                                    <td class="px-4 py-3 text-slate-600">全链路设计能力强，交互与标准化意识突出，文档描述准确程度高</td>
+                                    <td class="px-4 py-3 text-slate-600">
+                                        <p class="mb-1">对ChatBI、智能体对话这类非线性交互的设计经验仍在积累中，需要更多的用户行为数据或业务反馈来支撑设计优化；</p>
+                                        <p class="mb-1">产品设计过程偶尔会丢失对流程细节的实现，导致流程可能走不通，原因是对用户故事地图划分不够细，在核心用户故事层面应该有更强的定义；</p>
+                                        <p>产品整体迭代无节奏无规律，也受限于目前6.0的产品阶段。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium text-slate-800">项目管理</td>
+                                    <td class="px-4 py-3 font-bold text-indigo-600">4.4</td>
+                                    <td class="px-4 py-3 text-slate-600">交付稳定性极高，风险控制与跨团队协作能力成熟，团队内外部协作顺畅</td>
+                                    <td class="px-4 py-3 text-slate-600">
+                                        <p class="mb-1">目前项目管理更多聚焦于按时上线，在上线后效果追踪方面的闭环管理缺乏，在6.0真正投入市场之后需要重点关注用户反馈；</p>
+                                        <p>产品上线后待处理问题多，很多问题在“延期处理”后并没有进行处理，导致“功能有但是不好用”，明年将重视这部分的工作</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="planning" class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white mr-3 shadow-md">4</div>
+                    <h3 class="text-2xl font-bold text-slate-800">四、工作规划</h3>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl shadow-sm p-6 border-t-4 border-blue-500">
+                        <h4 class="text-lg font-bold text-blue-700 mb-4">4.1 专业进阶</h4>
+                        <div class="mb-3 p-3 bg-blue-50 rounded text-sm text-blue-800 italic">
+                            总体目标：完成从“教育产品经理”向“AI+教育产品经理”的蜕变，在保持高交付质量的基础上，补齐AI短板，并沉淀可复用的方法论体系。
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i><span>延续“学习+实战”模式，深入学习大模型原理、RAG技术细节及向量数据库应用等AI技术概念，并使其在各类项目中得到应用；</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i><span>持续关注多模态与智能体工作流的发展，坚持输出高质量的调研报告或竞品分析报告；</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i><span><strong>AI评估体系：</strong>建立除“主观判断准确率”之外的AI评估体系指标，反向优化数据检索逻辑和AI输出结果的有效性；</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i><span><strong>AI产品设计方法论：</strong>基于目前已经设计的chatBI、AI评阅和案例仿真，获取用户反馈，总结设计经验，形成一套自己的AI产品设计方法论。</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 border-t-4 border-indigo-500">
+                        <h4 class="text-lg font-bold text-indigo-700 mb-4">4.2 业务突破</h4>
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li>
+                                <span class="font-bold text-indigo-800 block mb-1">（1）推荐系统迭代：</span>
+                                不仅限于目前实现的全标签匹配，还要建立更多的推荐策略（如基于协同过滤、基于内容标签），解决“热门推荐”和“猜你喜欢”的从无到有，确保用户行为数据（点击、完课、搜索、测评）与推荐引擎的实时流转，并且需要完成效果归因与推荐系统的A/B Test，对比不同算法策略下的核心指标；
+                            </li>
+                            <li>
+                                <span class="font-bold text-indigo-800 block mb-1">（2）AI应用：</span>
+                                目前AI应用仍浮于表面，重点在“功能上线”，明年需要从“功能上线”转向“价值验证”与“商业闭环”，需要AI的应用与业务的深度结合，这需要更多业务的实际需求和反馈、并且个人需要更加关注行业动向。
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 border-t-4 border-purple-500">
+                        <h4 class="text-lg font-bold text-purple-700 mb-4">4.3 团队影响</h4>
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-users text-purple-500 mt-1 mr-2"></i>
+                                <span>（1）计划推进“AI重塑产品流程”工作，从方案设计、用户故事、流程设计、原型交互设计、需求文档编写到产品使用说明全方位考虑。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-project-diagram text-purple-500 mt-1 mr-2"></i>
+                                <span>（2）产品架构设计方面：虽有输出但缺乏系统性的方法论沉淀，目标提升产品架构设计能力，并且将个人能力转化为团队能力，构建“可复用、可扩展”的产品架构体系。</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="expectations" class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white mr-3 shadow-md">5</div>
+                    <h3 class="text-2xl font-bold text-slate-800">五、期待与诉求</h3>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl shadow-sm p-8">
+                        <h4 class="text-xl font-bold text-indigo-700 mb-6 border-b pb-2">5.1 对团队的建议</h4>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h5 class="font-bold text-slate-800 mb-2">1、建立系统化的AI产品方法论沉淀机制</h5>
+                                <p class="text-sm text-slate-600 mb-2">由于AI技术迭代极快，团队成员在面对新概念时，往往需要各自摸索，存在重复试错成本。上半年我虽然提议过增加分享 ，但在下半年做案例仿真和推荐系统时，深感深度的技术拆解分享仍然稀缺。</p>
+                                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                                    <li><strong>建立“AI设计模式库”：</strong> 建议团队将今年探索过的AI场景（如ChatBI交互、智能体编排、AI评阅逻辑）沉淀为标准的设计模式，供后续项目复用，避免“重复造轮子”。</li>
+                                    <li><strong>引入“技术-产品”双向分享会：</strong> 除了产品讲业务，建议定期邀请研发骨干分享底层技术边界，帮助产品经理更准确地评估AI需求的可行性，减少因技术黑盒带来的沟通成本。</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h5 class="font-bold text-slate-800 mb-2">2、建立“AI敏捷原型（Demo）”先行机制</h5>
+                                <p class="text-sm text-slate-600 mb-2">AI产品不同于传统功能，很难仅通过文档（PRD）准确描述效果。在做案例仿真或AI评阅时，往往出现“文档写完，研发做出来效果有偏差，反复返工”的情况。</p>
+                                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                                    <li><strong>建议在涉及AI复杂交互的项目中，引入“Prompt Demo先行”的流程。</strong> 在进入正式研发前，由产品经理或技术老师快速搭建一个最小可用的Prompt Demo进行验证。</li>
+                                    <li>只有当Demo的效果（如对话逻辑、评阅准确度）达到基准线后，再投入后端资源进行系统化开发。这样可以减少“写了做不出来”或“做出来不好用”的风险，降低AI项目的试错成本。</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h5 class="font-bold text-slate-800 mb-2">3、强化“数据驱动”的闭环验证</h5>
+                                <p class="text-sm text-slate-600 mb-2">目前我们的工作重心较多集中在“功能上线”和“项目交付”上（如网院迁移、各项目定制需求） ，但对于功能上线后，特别是AI功能（如推荐准确率、智能体对话质量）的效果评估和数据归因分析，尚未形成标准流程。</p>
+                                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                                    <li><strong>设立AI效果评估指标：</strong> 建议针对AI类产品，在传统的验收标准之外，增加“体验评估指标”，让产品迭代有据可依。</li>
+                                    <li><strong>打通业务数据反馈链：</strong> 希望能建立更畅通的渠道，让产品经理能定期获取一线（销售/运营）关于新功能（如ChatBI、案例仿真）的真实客户反馈，以便修正产品方向。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl shadow-sm p-8 border border-indigo-100">
+                        <h4 class="text-xl font-bold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">5.2 个人职业诉求</h4>
+                        
+                        <div class="space-y-8">
+                            <div>
+                                <h5 class="font-bold text-slate-800 mb-3 flex items-center">
+                                    <span class="w-8 h-8 rounded-full bg-indigo-200 text-indigo-700 flex items-center justify-center mr-2 text-sm">1</span>
+                                    职业发展定位：教育领域的AI专家型/架构型产品经理
+                                </h5>
+                                <p class="text-sm text-slate-700 leading-relaxed">
+                                    在2025年非常享受攻克难关的过程，如下半年从零调研并设计推荐系统和案例仿真产品。希望在2026年，能够继续承担高复杂度、高技术门槛的核心项目（如自适应学习引擎、多模态教学互动等），发挥我在架构设计和技术理解上的优势，为公司构建核心产品壁垒 。未来一年，我希望不仅仅是做一个“执行者”，而是能向“专家型”或“架构型”角色进阶。希望部门能继续给予我在AI+教育垂直领域更深度的探索空间，让我主导具有行业前瞻性的创新产品规划。
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5 class="font-bold text-slate-800 mb-3 flex items-center">
+                                    <span class="w-8 h-8 rounded-full bg-indigo-200 text-indigo-700 flex items-center justify-center mr-2 text-sm">2</span>
+                                    期望主导创新产品的“1到100”规模化迭代，提升产品全生命周期的掌控力
+                                </h5>
+                                <p class="text-sm text-slate-700 leading-relaxed">
+                                    如果说2025年是从0到1的破局之年，那么2026年我期望定义为从1到100的深耕之年。我不满足于仅仅完成功能的上线验收，而是期望主导产品全生命周期的深度迭代。通过建立体验评估体系和用户反馈闭环，持续打磨创建产品应用在真实教学场景中的颗粒度，将技术尝鲜转化为用户的高频依赖。我希望通过极致的体验打磨，构建起难以复制的产品壁垒，让创新产品真正成长在用户的业务流中。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12 text-center p-12 bg-slate-900 rounded-2xl text-white">
+                <i class="fas fa-rocket text-5xl mb-6 text-indigo-400"></i>
+                <p class="text-xl md:text-2xl font-light tracking-wide leading-relaxed">
+                    2026年的6是6.0的6，希望6.0在2026年6到飞起，<br>
+                    同时2026年也是个人的职业生涯第6年，<br>
+                    <span class="font-bold text-indigo-400">让暴风雨来的更猛烈些吧！！做大做强，再创辉煌！！</span>
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('skillsChart').getContext('2d');
+            
+            const data = {
+                labels: ['业务理解', '架构设计', '技术理解', '产品设计', '项目管理'],
+                datasets: [{
+                    label: '自我评分 (1-5)',
+                    data: [4.2, 4.3, 4.0, 4.5, 4.4],
+                    fill: true,
+                    backgroundColor: 'rgba(79, 70, 229, 0.2)',
+                    borderColor: 'rgb(79, 70, 229)',
+                    pointBackgroundColor: 'rgb(79, 70, 229)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(79, 70, 229)'
+                }]
+            };
+
+            const config = {
+                type: 'radar',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    elements: {
+                        line: {
+                            borderWidth: 3
+                        }
+                    },
+                    scales: {
+                        r: {
+                            angleLines: {
+                                display: true,
+                                color: '#e5e7eb'
+                            },
+                            grid: {
+                                color: '#e5e7eb'
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 5,
+                            ticks: {
+                                stepSize: 1,
+                                backdropColor: 'transparent'
+                            },
+                            pointLabels: {
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                },
+                                color: '#374151'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            };
+
+            new Chart(ctx, config);
+        });
+    </script>
+</body>
+</html>
